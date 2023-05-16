@@ -1,0 +1,14 @@
+name: DamRemoval_beta
+title: DamRemoval_beta
+username:
+account: chehalisriverbasin-predictedsalmonidrangeofoccurrence
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8775495
+bundleId: 7054144
+url: https://chehalisriverbasin-predictedsalmonidrangeofoccurrence.shinyapps.io/DamRemoval_beta/
+when: 1680722585.15693
+lastSyncTime: 1680722585.15695
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: DamRemovalCost_app.R

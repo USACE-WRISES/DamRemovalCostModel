@@ -1,0 +1,13 @@
+name: DamRemovalCostPredictiveModel
+title: DamRemovalCostPredictiveModel
+username:
+account: wrises
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 8990883
+bundleId: 7154193
+url: https://wrises.shinyapps.io/DamRemovalCostPredictiveModel/
+when: 1682804977.56252
+lastSyncTime: 1682804977.56254
+asMultiple: FALSE
+asStatic: FALSE
