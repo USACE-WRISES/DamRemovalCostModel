@@ -1,8 +1,8 @@
 #=========================================================
-#        Dam Removel Cost Estimator ShinyApp
+#        Dam Removal Cost Estimator Shiny App
 #   
 #           Author: Eric J Walther
-#           Last date modified: April 27, 2023
+#           Last date modified: May 16, 2023
 #==========================================================
 
 #load required packages
