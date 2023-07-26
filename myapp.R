@@ -2,7 +2,7 @@
 #        Dam Removal Cost Estimator Shiny App
 #   
 #           Author: Eric J Walther
-#           Last date modified: May 16, 2023
+#           Last date modified: July 26, 2023
 #==========================================================
 
 #load required packages
@@ -118,7 +118,9 @@ ui<-navbarPage(title="Dam Removal Cost Estimator",theme = shinytheme("lumen"),
                                                  p("1. Duda, J. J., Johnson, R. C., Jensen, B. L., Wagner, E. J., Richards, K., and Wieferich, D. J. (2023). Compilation of cost estimates for dam removal projects in the United States. Available at:",a("https://doi.org/10.5066/P9G8V371",
                                                                                                                                                                                                                                                            href="https://doi.org/10.5066/P9G8V371",
                                                                                                                                                                                                                                                            target="_blank"),"."),
-                                                 p("2. Duda, J.J., Jumani, S., Wieferich, D.J., Bountry, J.A., Tullos, D., McKay, S.K., Randle, T.J., Jansen, A., Bailey, S., Jenson, B.L., Johnson, R.C., Wagner, E., Richards, K., Wenger, S., and Walther, E.J. (in review). Patterns, drivers, and a predictive model of dam removal cost in the United States. Frontiers in Ecology and the Environment")
+                                                 p("2. Duda, J.J., Jumani, S., Wieferich, D.J., Tullos, D., McKay, S.K., Randle, T.J., Jansen, A., Bailey, S., Jenson, B.L., Johnson, R.C., Wagner, E., Richards, K., Wenger, S.J., Walther, E.J, and Bountry, J.A. (2023). Patterns, drivers, and a predictive model of dam removal cost in the United States. Frontiers in Ecology and the Environment. 11. doi:",a("10.3389/fevo.2023.1215471",
+                                                                                                                                                                                                                                                                                                                                                                                                                      href="https://doi.org/10.3389/fevo.2023.1215471",
+                                                                                                                                                                                                                                                                                                                                                                                                                      target="_blank"),".")
                                         ),
                                         tabPanel("Cost prediction",
                                                  h3("Estimated Costs (in 2020 USD)"),
@@ -156,7 +158,9 @@ ui<-navbarPage(title="Dam Removal Cost Estimator",theme = shinytheme("lumen"),
                         p("1. Duda, J. J., Johnson, R. C., Jensen, B. L., Wagner, E. J., Richards, K., and Wieferich, D. J. (2023). Compilation of cost estimates for dam removal projects in the United States. Available at:",a("https://doi.org/10.5066/P9G8V371",
                                                                                                                                                                                                                                   href="https://doi.org/10.5066/P9G8V371",
                                                                                                                                                                                                                                   target="_blank"),"."),
-                        p("2. Duda, J.J., Jumani, S., Wieferich, D.J., Bountry, J.A., Tullos, D., McKay, S.K., Randle, T.J., Jansen, A., Bailey, S., Jenson, B.L., Johnson, R.C., Wagner, E., Richards, K., Wenger, S., and Walther, E.J. (in review). Patterns, drivers, and a predictive model of dam removal cost in the United States. Frontiers in Ecology and the Environment"),
+                        p("2. Duda, J.J., Jumani, S., Wieferich, D.J., Tullos, D., McKay, S.K., Randle, T.J., Jansen, A., Bailey, S., Jenson, B.L., Johnson, R.C., Wagner, E., Richards, K., Wenger, S.J., Walther, E.J, and Bountry, J.A. (2023). Patterns, drivers, and a predictive model of dam removal cost in the United States. Frontiers in Ecology and the Environment. 11. doi:",a("10.3389/fevo.2023.1215471",
+                                                                                                                                                                                                                                                                                                                                                                                            href="https://doi.org/10.3389/fevo.2023.1215471",
+                                                                                                                                                                                                                                                                                                                                                                                            target="_blank"),"."),
                         p("3. Friedman, J. H. (2002). Stochastic gradient boosting. Comput. Stat. Data Anal. 38, 367–378. doi:",a("10.1016/S0167-9473(01)00065-2",
                                                                                                                              href="https://doi.org/10.1016/S0167-9473(01)00065-2",
                                                                                                                              target="_blank"),".")
@@ -817,7 +821,9 @@ server <- function(input, output) {
    ))})
  output$associatedpubs<-renderUI({
    HTML(paste0(
-     "•	Duda, J.J., Jumani, S., Wieferich, D.J., Bountry, J.A., Tullos, D., McKay, S.K., Randle, T.J., Jansen, A., Bailey, S., Jenson, B.L., Johnson, R.C., Wagner, E., Richards, K., Wenger, S., and Walther, E.J. (in review). Patterns, drivers, and a predictive model of dam removal cost in the United States. Frontiers in Ecology and the Environment",br(),
+     "•	Duda, J.J., Jumani, S., Wieferich, D.J., Tullos, D., McKay, S.K., Randle, T.J., Jansen, A., Bailey, S., Jenson, B.L., Johnson, R.C., Wagner, E., Richards, K., Wenger, S.J., Walther, E.J, and Bountry, J.A. (2023). Patterns, drivers, and a predictive model of dam removal cost in the United States. Frontiers in Ecology and the Environment. 11. doi:",a("10.3389/fevo.2023.1215471",
+                                                                                                                                                                                                                                                                                                                                                                      href="https://doi.org/10.3389/fevo.2023.1215471",
+                                                                                                                                                                                                                                                                                                                                                                      target="_blank"),".",br(),
      "•	Bountry J., Duda J., Randle T., Jansen A., Jumani S., McKay K., Bailey S.  (2023). Dam Removal Cost Databases and Drivers. SEDHYD."))
  })
  
